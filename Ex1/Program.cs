@@ -13,9 +13,9 @@ PrintArr(array);
 int[,] FillArray(int rows, int columns, int min, int max)
 {
     int[,] filledArray = new int[rows, columns];
-    for (int i = 0; i < columns; i++)
+    for (int i = 0; i < rows; i++)
     {
-        for (int  j = 0; j < rows; j++)
+        for (int j = 0; j < columns; j++)
         {
             filledArray[i, j] = new Random().Next(min, max + 1);
         }
